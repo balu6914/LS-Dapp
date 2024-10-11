@@ -1,0 +1,22 @@
+{
+  "name": "ls-dapp",
+  "version": "1.0.0",
+  "description": "Liquid staking dApp on Ethereum that takes ETH deposits, stakes them on the network and issues a liquid staking token. The app should allow users to deposit ETH, stake it, and receive a liquid staking token representing their staked ETH.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@nomiclabs/hardhat-ethers": "^2.2.3",
+    "ethers": "^5.7.2",
+    "hardhat": "^2.22.13"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.0.2",
+    "dotenv": "^16.4.5"
+  }
+}
