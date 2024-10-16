@@ -1,57 +1,69 @@
-Liquid Staking DApp - Backend
+# Liquid Staking DApp - Backend
+
 This repository contains the smart contracts and backend scripts for the Liquid Staking Decentralized Application (DApp). It enables users to stake their Ethereum and earn rewards via a liquid staking mechanism.
 
-Table of Contents
-Getting Started
-Smart Contracts
-Installation
-Testing
-Deployment
-Project Structure
-License
-Getting Started
+## Table of Contents
+
+- [Getting Started](#getting-started)
+- [Smart Contracts](#smart-contracts)
+- [Installation](#installation)
+- [Testing](#testing)
+- [Deployment](#deployment)
+- [Project Structure](#project-structure)
+- [License](#license)
+
+## Getting Started
+
 Follow these instructions to set up and run the project on your local machine for development and testing purposes.
 
-Prerequisites
+### Prerequisites
+
 Ensure that you have the following installed:
 
-Node.js (v14+ recommended)
-npm or yarn
-Hardhat (for Ethereum development)
-Ethereum wallet with test ETH (e.g., MetaMask) for deploying on a test network
-Smart Contracts
+- [Node.js](https://nodejs.org/) (v14+ recommended)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
+- [Hardhat](https://hardhat.org/) (for Ethereum development)
+- Ethereum wallet with test ETH (e.g., MetaMask) for deploying on a test network
+
+### Smart Contracts
+
 The project consists of two main smart contracts:
 
-LiquidToken.sol: Implements an ERC-20 token used in the staking process.
-Stacking.sol: Manages the staking mechanism, including deposit and redeem functionality.
-Both contracts are located in the contracts/ directory.
+1. **LiquidToken.sol**: Implements an ERC-20 token used in the staking process.
+2. **Stacking.sol**: Manages the staking mechanism, including deposit and redeem functionality.
 
-Installation
+Both contracts are located in the `contracts/` directory.
+
+## Installation
+
 To set up and install the backend of this DApp:
 
-Clone the repository:
+1. **Clone the repository:**
 
-bash
-Copy code
-git clone https://github.com/balu6914/LS-Dapp.git
-cd LS-Dapp
-Install dependencies:
+    ```bash
+    git clone https://github.com/balu6914/LS-Dapp.git
+    cd LS-Dapp
+    ```
 
-bash
-Copy code
-npm install
-Compile the smart contracts using Hardhat:
+2. **Install dependencies:**
 
-bash
-Copy code
-npx hardhat compile
-Testing
-This project includes some basic tests for verifying the smart contract functionality. Tests are located in the test/ directory.
+    ```bash
+    npm install
+    ```
+
+3. **Compile the smart contracts using Hardhat:**
+
+    ```bash
+    npx hardhat compile
+    ```
+
+## Testing
+
+This project includes some basic tests for verifying the smart contract functionality. Tests are located in the `test/` directory.
 
 To run the tests using Hardhat:
 
-bash
-Copy code
+```bash
 npx hardhat test
 Deployment
 To deploy the smart contracts on a local or test Ethereum network (e.g., Rinkeby, Goerli), use the deployment script provided.
